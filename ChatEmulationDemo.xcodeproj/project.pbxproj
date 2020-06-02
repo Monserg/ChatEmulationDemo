@@ -13,6 +13,8 @@
 		B15FC5F22486D6B600ADCC72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B15FC5F12486D6B600ADCC72 /* Assets.xcassets */; };
 		B15FC5F52486D6B600ADCC72 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B15FC5F42486D6B600ADCC72 /* Preview Assets.xcassets */; };
 		B15FC5F82486D6B600ADCC72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15FC5F62486D6B600ADCC72 /* LaunchScreen.storyboard */; };
+		B15FC6002486D71000ADCC72 /* ReadMe.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B15FC5FF2486D71000ADCC72 /* ReadMe.pdf */; };
+		B15FC6042486DD6B00ADCC72 /* ChatScenario.json in Resources */ = {isa = PBXBuildFile; fileRef = B15FC6032486DD6B00ADCC72 /* ChatScenario.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B15FC5F42486D6B600ADCC72 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B15FC5F72486D6B600ADCC72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B15FC5F92486D6B600ADCC72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B15FC5FF2486D71000ADCC72 /* ReadMe.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ReadMe.pdf; sourceTree = "<group>"; };
+		B15FC6032486DD6B00ADCC72 /* ChatScenario.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ChatScenario.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,7 @@
 		B15FC5DF2486D6B300ADCC72 = {
 			isa = PBXGroup;
 			children = (
+				B15FC5FF2486D71000ADCC72 /* ReadMe.pdf */,
 				B15FC5EA2486D6B300ADCC72 /* ChatEmulationDemo */,
 				B15FC5E92486D6B300ADCC72 /* Products */,
 			);
@@ -59,10 +64,9 @@
 				B15FC5EB2486D6B300ADCC72 /* AppDelegate.swift */,
 				B15FC5ED2486D6B300ADCC72 /* SceneDelegate.swift */,
 				B15FC5EF2486D6B300ADCC72 /* ContentView.swift */,
-				B15FC5F12486D6B600ADCC72 /* Assets.xcassets */,
 				B15FC5F62486D6B600ADCC72 /* LaunchScreen.storyboard */,
-				B15FC5F92486D6B600ADCC72 /* Info.plist */,
 				B15FC5F32486D6B600ADCC72 /* Preview Content */,
+				B15FC6022486D9AC00ADCC72 /* Resource */,
 			);
 			path = ChatEmulationDemo;
 			sourceTree = "<group>";
@@ -73,6 +77,16 @@
 				B15FC5F42486D6B600ADCC72 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B15FC6022486D9AC00ADCC72 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B15FC5F12486D6B600ADCC72 /* Assets.xcassets */,
+				B15FC5F92486D6B600ADCC72 /* Info.plist */,
+				B15FC6032486DD6B00ADCC72 /* ChatScenario.json */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,8 +147,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B15FC6002486D71000ADCC72 /* ReadMe.pdf in Resources */,
 				B15FC5F82486D6B600ADCC72 /* LaunchScreen.storyboard in Resources */,
 				B15FC5F52486D6B600ADCC72 /* Preview Assets.xcassets in Resources */,
+				B15FC6042486DD6B00ADCC72 /* ChatScenario.json in Resources */,
 				B15FC5F22486D6B600ADCC72 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +304,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ChatEmulationDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = 2DS2B364WY;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ChatEmulationDemo/Info.plist;
+				INFOPLIST_FILE = ChatEmulationDemo/Resource/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +324,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ChatEmulationDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = 2DS2B364WY;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ChatEmulationDemo/Info.plist;
+				INFOPLIST_FILE = ChatEmulationDemo/Resource/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
