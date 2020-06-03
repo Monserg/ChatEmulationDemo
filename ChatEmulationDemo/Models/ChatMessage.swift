@@ -10,6 +10,6 @@ import Foundation
 
 struct ChatMessage: Codable, Hashable {
     // MARK: - Properties
-    let line: String
+    var line: String
     let author: String?
 }

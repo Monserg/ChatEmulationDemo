@@ -18,7 +18,19 @@ class JSONManager: ObservableObject {
         let url = Bundle.main.url(forResource: "chatScenario", withExtension: "json")!
         let data = try! Data(contentsOf: url)
         let decoder = JSONDecoder()        
-        let items = try? decoder.decode([ChatMessage].self, from: data)
+        var items = try? decoder.decode([ChatMessage].self, from: data)
+        
+        for (index, var item) in items!.enumerated() {
+            let line = item.line
+            
+            if line.count > 550 {
+                Logger.log(message: "line # \(index) before: \n\(line)", event: .debug)
+                item.line = line.substring(to: 550)
+                items![index] = item
+                Logger.log(message: "item line after: \n\(item.line)", event: .debug)
+            }
+        }
+
         self.messages = items!
     }
 }

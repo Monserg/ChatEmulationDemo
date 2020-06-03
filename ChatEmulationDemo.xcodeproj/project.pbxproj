@@ -23,6 +23,7 @@
 		B1C687512487AE9B00D854BD /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C687502487AE9B00D854BD /* Collection+Extensions.swift */; };
 		B1C687532487DF3E00D854BD /* BubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C687522487DF3E00D854BD /* BubbleView.swift */; };
 		B1C687552487FA3300D854BD /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C687542487FA3300D854BD /* Triangle.swift */; };
+		B1C687572488026B00D854BD /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C687562488026B00D854BD /* String+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		B1C687502487AE9B00D854BD /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
 		B1C687522487DF3E00D854BD /* BubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleView.swift; sourceTree = "<group>"; };
 		B1C687542487FA3300D854BD /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
+		B1C687562488026B00D854BD /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				B1C687502487AE9B00D854BD /* Collection+Extensions.swift */,
 				B15FC61224878C2F00ADCC72 /* Color+Extensions.swift */,
 				B15FC60E248785A800ADCC72 /* Date+Extensions.swift */,
+				B1C687562488026B00D854BD /* String+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 				B15FC5EC2486D6B300ADCC72 /* AppDelegate.swift in Sources */,
 				B15FC60C2487843D00ADCC72 /* Logger.swift in Sources */,
 				B15FC60F248785A800ADCC72 /* Date+Extensions.swift in Sources */,
+				B1C687572488026B00D854BD /* String+Extensions.swift in Sources */,
 				B15FC61324878C2F00ADCC72 /* Color+Extensions.swift in Sources */,
 				B15FC6072487821D00ADCC72 /* ChatMessage.swift in Sources */,
 				B15FC6112487892300ADCC72 /* ChatView.swift in Sources */,
