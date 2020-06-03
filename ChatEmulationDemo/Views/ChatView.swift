@@ -13,13 +13,15 @@ struct ChatView: View {
     
     var body: some View {
         NavigationView {
-            List {
-                ForEach(0..<jsonManager.messages.count) { index in
-                    VStack(alignment: .leading, spacing: 10) {
-                        Text(self.jsonManager.messages[index].line)
-                    }
-                }
-            }
+//            List {
+//            VStack(alignment: .leading, spacing: 30) {
+//                ForEach(0..<jsonManager.messages.count) { index in
+//                    VStack(alignment: .leading, spacing: 30) {
+                        BubbleView(message: self.jsonManager.messages[12].line)
+//                        Text(self.jsonManager.messages[index].line)
+//                    }
+//                }
+//            }
             
             Color.body
                 .edgesIgnoringSafeArea(.all)

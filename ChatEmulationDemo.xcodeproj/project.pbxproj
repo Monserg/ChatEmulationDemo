@@ -21,6 +21,8 @@
 		B15FC6112487892300ADCC72 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15FC6102487892300ADCC72 /* ChatView.swift */; };
 		B15FC61324878C2F00ADCC72 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15FC61224878C2F00ADCC72 /* Color+Extensions.swift */; };
 		B1C687512487AE9B00D854BD /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C687502487AE9B00D854BD /* Collection+Extensions.swift */; };
+		B1C687532487DF3E00D854BD /* BubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C687522487DF3E00D854BD /* BubbleView.swift */; };
+		B1C687552487FA3300D854BD /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C687542487FA3300D854BD /* Triangle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		B15FC6102487892300ADCC72 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		B15FC61224878C2F00ADCC72 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		B1C687502487AE9B00D854BD /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
+		B1C687522487DF3E00D854BD /* BubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleView.swift; sourceTree = "<group>"; };
+		B1C687542487FA3300D854BD /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +83,7 @@
 				B15FC60D2487858200ADCC72 /* Extensions */,
 				B15FC608248782A600ADCC72 /* Managers */,
 				B15FC6052487820400ADCC72 /* Models */,
-				B15FC61424879C6900ADCC72 /* Scenes */,
+				B15FC61424879C6900ADCC72 /* Views */,
 				B15FC5F32486D6B600ADCC72 /* Preview Content */,
 				B15FC6022486D9AC00ADCC72 /* Resource */,
 			);
@@ -108,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				B15FC6062487821D00ADCC72 /* ChatMessage.swift */,
+				B1C687542487FA3300D854BD /* Triangle.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -131,12 +136,13 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		B15FC61424879C6900ADCC72 /* Scenes */ = {
+		B15FC61424879C6900ADCC72 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				B15FC6102487892300ADCC72 /* ChatView.swift */,
+				B1C687522487DF3E00D854BD /* BubbleView.swift */,
 			);
-			path = Scenes;
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,12 +218,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1C687532487DF3E00D854BD /* BubbleView.swift in Sources */,
 				B15FC5EC2486D6B300ADCC72 /* AppDelegate.swift in Sources */,
 				B15FC60C2487843D00ADCC72 /* Logger.swift in Sources */,
 				B15FC60F248785A800ADCC72 /* Date+Extensions.swift in Sources */,
 				B15FC61324878C2F00ADCC72 /* Color+Extensions.swift in Sources */,
 				B15FC6072487821D00ADCC72 /* ChatMessage.swift in Sources */,
 				B15FC6112487892300ADCC72 /* ChatView.swift in Sources */,
+				B1C687552487FA3300D854BD /* Triangle.swift in Sources */,
 				B15FC5EE2486D6B300ADCC72 /* SceneDelegate.swift in Sources */,
 				B15FC60A248782BC00ADCC72 /* JSONManager.swift in Sources */,
 				B1C687512487AE9B00D854BD /* Collection+Extensions.swift in Sources */,
