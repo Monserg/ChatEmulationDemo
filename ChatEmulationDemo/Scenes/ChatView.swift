@@ -14,9 +14,9 @@ struct ChatView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(jsonManager.messages.enumeratedArray(), id: \.element) { index, message in
-                    VStack(alignment: .leading, spacing: 10){
-                        Text(message.line)
+                ForEach(0..<jsonManager.messages.count) { index in
+                    VStack(alignment: .leading, spacing: 10) {
+                        Text(self.jsonManager.messages[index].line)
                     }
                 }
             }
