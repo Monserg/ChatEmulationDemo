@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct ChatMessage: Codable {
+struct ChatMessage: Codable, Hashable {
     // MARK: - Properties
     let line: String
     let author: String?
