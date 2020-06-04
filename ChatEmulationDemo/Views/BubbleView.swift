@@ -9,6 +9,10 @@
 import SwiftUI
 
 struct BubbleView: View {
+    @State private var opacity = 0.0
+    @State private var index = 1
+    @State private var offsetY: CGFloat = 450.0
+    
     var message: String
     var isFirst: Bool = false
     
@@ -31,9 +35,36 @@ struct BubbleView: View {
             .frame(width: geometryProxy.size.width * 0.75, height: geometryProxy.size.height, alignment: .bottomLeading)
             .clipped()
             .shadow(color: Color.shadow, radius: 4, x: 1, y: 1)
-            .offset(x: 20, y: 0)
+            .offset(x: 20, y: self.index == 0 ? 0.0 : self.offsetY)
+            .opacity(self.opacity)
+            .onAppear {
+                withAnimation(Animation.linear(duration: 0.5)) {
+                    self.opacity = 1.0
+
+                    withAnimation(Animation.linear(duration: 0.5).delay(0.5)) {
+                        self.offsetY = 0.0
+
+                        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5) {
+                            _ = VoiceManager(speechMessage: self.message) {
+                                Logger.log(message: "speech finished", event: .debug)
+                                
+                                #warning("Load next message")
+                                self.test()
+                            }
+                        }
+                    }
+                }
+            }
             
+
             Spacer()
+        }
+    }
+    
+    private func test() {
+        withAnimation(Animation.linear(duration: 0.5).delay(0.5)) {
+            self.offsetY = 450.0
+            
         }
     }
 }

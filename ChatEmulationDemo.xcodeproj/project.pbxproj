@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B12647AD2488D466002FFE20 /* VoiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12647AC2488D466002FFE20 /* VoiceManager.swift */; };
 		B15FC5EC2486D6B300ADCC72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15FC5EB2486D6B300ADCC72 /* AppDelegate.swift */; };
 		B15FC5EE2486D6B300ADCC72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15FC5ED2486D6B300ADCC72 /* SceneDelegate.swift */; };
 		B15FC5F22486D6B600ADCC72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B15FC5F12486D6B600ADCC72 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B12647AC2488D466002FFE20 /* VoiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceManager.swift; sourceTree = "<group>"; };
 		B15FC5E82486D6B300ADCC72 /* ChatEmulationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatEmulationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B15FC5EB2486D6B300ADCC72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B15FC5ED2486D6B300ADCC72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,8 +124,9 @@
 		B15FC608248782A600ADCC72 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				B15FC60B2487843D00ADCC72 /* Logger.swift */,
 				B15FC609248782BC00ADCC72 /* JSONManager.swift */,
+				B15FC60B2487843D00ADCC72 /* Logger.swift */,
+				B12647AC2488D466002FFE20 /* VoiceManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				B15FC5EE2486D6B300ADCC72 /* SceneDelegate.swift in Sources */,
 				B15FC60A248782BC00ADCC72 /* JSONManager.swift in Sources */,
 				B1C687512487AE9B00D854BD /* Collection+Extensions.swift in Sources */,
+				B12647AD2488D466002FFE20 /* VoiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

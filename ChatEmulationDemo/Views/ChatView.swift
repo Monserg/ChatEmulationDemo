@@ -18,7 +18,7 @@ struct ChatView: View {
 //                ForEach(0..<jsonManager.messages.count) { index in
 //                    VStack(alignment: .leading, spacing: 30) {
             
-            BubbleView(message: self.jsonManager.messages[1].line)
+            BubbleView(message: self.jsonManager.messages[0].line)
 //                        Text(self.jsonManager.messages[index].line)
 //                    }
 //                }
