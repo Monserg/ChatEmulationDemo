@@ -20,19 +20,22 @@ struct ChatView: View {
 
     var body: some View {
         NavigationView {
-            VStack {
-                List {
-                    ForEach(chatManager.chatMessages, id: \.self) { message in
-                        BubbleView(index: self.index, message: message) {
-                            Logger.log(message: "finished", event: .debug)
-                            
-                            if self.index < self.chatManager.chatCount - 1 {
-                                self.index += 1
-                                self.chatManager.nextMessage(self.index)
-                            } else {
-                                Logger.log(message: "current index = \(self.index) is over array", event: .error)
+            GeometryReader { bodyView in
+                VStack {
+                    List {
+                        ForEach(self.chatManager.chatMessages, id: \.self) { message in
+                            BubbleView(index: self.index, message: message) {
+                                Logger.log(message: "finished", event: .debug)
+                                
+                                if self.index < self.chatManager.chatCount - 1 {
+                                    self.index += 1
+                                    self.chatManager.nextMessage(self.index)
+                                } else {
+                                    Logger.log(message: "current index = \(self.index) is over array", event: .error)
+                                }
                             }
                         }
+                        .frame(width: bodyView.size.width * 0.75)
                     }
                 }
             }
