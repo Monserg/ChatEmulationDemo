@@ -39,6 +39,7 @@ extension VoiceManager: AVSpeechSynthesizerDelegate {
     }
     
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
+        stopSpeaking(at: .immediate)
         self.complete()
     }
 }
