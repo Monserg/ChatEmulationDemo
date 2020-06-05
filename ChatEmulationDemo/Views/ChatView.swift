@@ -9,8 +9,41 @@
 import SwiftUI
 
 struct ChatView: View {
-    @State var messagesCount = 9
+    @State var index: Int = 0
 
+    let chatManager = ChatManager()
+    
+    init() {
+        UITableView.appearance().separatorStyle = .none
+        UITableView.appearance().tableFooterView = UIView()
+    }
+
+    var body: some View {
+        NavigationView {
+            VStack {
+                List {
+                    ForEach(chatManager.chatMessages, id: \.self) { message in
+                        BubbleView(index: self.index, message: message) {
+                            Logger.log(message: "finished", event: .debug)
+                            
+                            if self.index < self.chatManager.chatCount - 1 {
+                                self.index += 1
+                                self.chatManager.nextMessage(self.index)
+                            } else {
+                                Logger.log(message: "current index = \(self.index) is over array", event: .error)
+                            }
+                        }
+                    }
+                }
+            }
+            .navigationBarTitle(Text("Dialogue"), displayMode: .inline)
+            .padding(.bottom, 0)
+            .edgesIgnoringSafeArea(.bottom)
+        }
+    }
+
+    
+    /*
     var body: some View {
         NavigationView {
             GeometryReader { fullView in
@@ -25,18 +58,13 @@ struct ChatView: View {
                     .frame(width: fullView.size.width * 0.75)
                 }
                     
-                .onAppear {
-                    UITableView.appearance().separatorStyle = .none
-                    UITableView.appearance().isScrollEnabled = true
-//                    UITableView.appearance().sroll = true
-                }
-                
             }
             .navigationBarTitle(Text("Dialogue"), displayMode: .inline)
         }
     }
 
-        
+     */
+    
         /*
         GeometryReader { fullView in
             ScrollView(.vertical, showsIndicators: false) {
